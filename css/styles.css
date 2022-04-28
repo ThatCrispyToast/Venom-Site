@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+body {
+    background-color: black;
+    margin:0;
+    padding:0;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.loading {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+
+}
+
+.frame img {
+    height: 50%;
+    z-index: 1;
+}
+
+.frame .title {
+    font-size: 5em;
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translate(-100%, 0px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .frame .title {
+        display: none;
+    }
+  }
+
+.main_header {
+    text-align: center;
+}
