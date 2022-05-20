@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venom Robotics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>14892: Venom</title>
+    <script>
+        window.onload = function () {
+            var loading_page = document.getElementById("loading");
+            loading_page.style.animation = "loading-out 0.5s forwards";
+        }
+    </script>
+
 </head>
+
 <body>
-    <p>Hello, World!</p>
+    <div class="loading" id="loading">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <div class="navBar">
+
+        <div class="logo">
+            <a href="">
+                <img src="assets/GlowingLogoWithName.png" alt="TheBigCB.com">
+
+            </a>
+        </div>
+
+        <div class="menuItems">
+            <div class="active">
+                <a href="">Home</a>
+            </div>
+            <div>
+                <a href="team">Team</a>
+
+            </div>
+            <div>
+                <a href="outreach">Outreach</a>
+
+            </div>
+            <div>
+                <a href="contact">Contact</a>
+
+            </div>
+
+        </div>
+        <button class="hamburgerButton" onclick="">
+            <i class="fa fa-bars" style="font-size:24px;color:white"></i>
+        </button>
+
+        <div class="socials">
+            <div>
+                <a href="https://www.youtube.com/channel/UC8Go9UgS3Ttgp2neeSNyBXQ">
+                    <div class="tooltip">
+                        <i class="fa fa-youtube-play" style="font-size:24px;color:white"></i>
+                        <span class="tooltiptext">YouTube</span>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/venom14892">
+                    <div class="tooltip">
+                        <i class="fa fa-twitter" style="font-size:24px;color:white"></i>
+                        <span class="tooltiptext">Twitter</span>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/avengers_robotics_14892">
+                    <div class="tooltip">
+                        <i class="fa fa-instagram" style="font-size:24px;color:white"></i>
+                        <span class="tooltiptext">Instagram</span>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/ThatCrispyToast/Venom-Site">
+                    <div class="tooltip">
+                        <i class="fa fa-github" style="font-size:24px;color:white"></i>
+                        <span class="tooltiptext">GitHub</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/nathan.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <img src="assets/titled_logo.png" alt="Venom Logo" class="content_logo">
+        <!-- <h1 class="content_title">Venom</h1> -->
+    </div>
 </body>
+
 </html>
